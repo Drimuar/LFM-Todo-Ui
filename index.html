@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo Ui</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<meta name="description" content="Описание сайта">
+	<meta name="keywords" content="Ключевые слова, сайт, макет">
+	<meta name="robots" content="">
+</head>
+
+<body>
+	<section class="main-frame">
+		<div class="priority">
+			<h2 class="title">HIGH</h2>
+			<form class="add-form" name="high">
+				<input class="add-text" name="text" type="text" placeholder="Добавить важных дел">
+				<button type="submit" class="add-button"></button>
+			</form>
+			<div class="container">
+				<div class="task">
+					<label class="checkbox-wrap">
+						<input class="checkbox" type="checkbox">
+					</label>
+					<p class="text">Вот вам и супер интересная тема.
+						Вы наверняка заметили что ваши файлы с кодом становятся все объемнее, что хочется вынести
+						некоторые вещи куда-то за пределы основной программы.</p>
+					<button class="remove-button"></button>
+				</div>
+			</div>
+		</div>
+		<div class="priority">
+			<h2 class="title">LOW</h2>
+			<form class="add-form" name="low">
+				<input class="add-text" name="text" type="text" placeholder="Добавить важных дел">
+				<button type="submit" class="add-button"></button>
+			</form>
+			<div class="container">
+				<div class="task">
+					<label class="checkbox-wrap">
+						<input class="checkbox" type="checkbox">
+					</label>
+					<p class="text">Просмотреть Ютубчик!</p>
+					<button class="remove-button"></button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
