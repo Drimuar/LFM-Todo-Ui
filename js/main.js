@@ -32,17 +32,15 @@ function createTask(event) {
 }
 
 function removeTask() {
-	let div = this.parentElement;
-	let divAttributes = div.getAttribute('class');
-	if (divAttributes.includes('task')) {
+	let div = this.closest('.task');
+	if (!!div) {
 		div.remove();
 	}
 }
 
 function markTask() {
-	let div = this.parentElement.parentElement;
-	let divAttributes = div.getAttribute('class');
-	if (divAttributes.includes('task')) {
+	let div = this.closest('.task');
+	if (!!div) {
 		if (this.checked) {
 			div.classList.add('task-done');
 		}
