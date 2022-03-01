@@ -43,7 +43,12 @@ function markTask() {
 	let div = this.parentElement.parentElement;
 	let divAttributes = div.getAttribute('class');
 	if (divAttributes.includes('task')) {
-		div.classList.toggle('task-done');
+		if (this.checked) {
+			div.classList.add('task-done');
+		}
+		else {
+			div.classList.remove('task-done');
+		}
 	}
 }
 
