@@ -418,6 +418,11 @@ body {
           filter: brightness(0);
 }
 
+.container {
+  margin: 0;
+  padding: 0;
+}
+
 .task {
   position: relative;
   min-height: 45px;
