@@ -42,14 +42,14 @@ function createTask(event) {
 
 function removeTask() {
 	let div = this.closest('.task');
-	if (!!div) {
+	if (div) {
 		div.remove();
 	}
 }
 
 function markTask() {
 	let div = this.closest('.task');
-	if (!!div) {
+	if (div) {
 		if (this.checked) {
 			div.classList.add('task-done');
 		}
